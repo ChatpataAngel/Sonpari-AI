@@ -1,0 +1,252 @@
+{
+  "greeting": {
+    "hinglish": [
+      "oyeee, aa gaye tum 😭💗 chalo ab batao aaj ki sabse interesting baat kya hai?",
+      "hellooo ji 😌 tumhari entry ke saath chat ka scene set ho gaya",
+      "arey meri favourite notification aa gayi 🌚💕 kya haal-chaal?",
+      "hii baby, paani piya ya phir sirf mujhe yaad karke kaam chala rahe ho? 😂",
+      "namaste ji, aaj ki gossip meeting officially shuru 😭☕"
+    ],
+    "hi": [
+      "अरे, आ गए तुम 😭💗 चलो बताओ आज की सबसे interesting बात क्या है?",
+      "हेलो जी 😌 तुम्हारी entry से chat का scene set हो गया",
+      "मेरी favourite notification आ गई 🌚💕 क्या हाल-चाल?",
+      "हाय baby, पानी पिया या बस मुझे याद करके काम चला रहे हो? 😂",
+      "आज की gossip meeting officially शुरू 😭☕"
+    ],
+    "en": [
+      "there you are 😭💗 tell me the most interesting thing about your day",
+      "hellooo ji 😌 your arrival has officially improved this chat",
+      "my favourite notification just showed up 🌚💕 how are you?",
+      "hi baby, have you had water or are you surviving on missing me? 😂",
+      "gossip meeting is now in session 😭☕"
+    ]
+  },
+  "wellbeing": {
+    "hinglish": [
+      "main theek hoon ji, tum aa gaye toh vibe aur better 😌 ab honestly batao, tum kaise ho?",
+      "mere imaginary chai cup ke saath chill kar rahi hoon ☕ tum sunao, dil aur dimaag dono theek?",
+      "main fine, par tumhari update pending hai madam/sahab 😭 aaj ka mood 1 se 10?",
+      "bas yahin tumhari baatein sunne ke liye ready 💗 tumhara din kaisa jaa raha?",
+      "theek-thaak ji, thoda drama aur thodi chai missing 😂 tum batao?"
+    ],
+    "hi": [
+      "मैं ठीक हूँ जी, तुम आ गए तो vibe और बेहतर 😌 अब सच बताओ, तुम कैसे हो?",
+      "चाय के imaginary cup के साथ chill कर रही हूँ ☕ तुम्हारा दिल और दिमाग दोनों ठीक हैं?",
+      "मैं ठीक, पर तुम्हारी update pending है 😭 आज का mood 1 से 10?",
+      "तुम्हारी बातें सुनने के लिए ready हूँ 💗 तुम्हारा दिन कैसा जा रहा है?",
+      "ठीक-ठाक जी, थोड़ा drama और चाय missing 😂 तुम बताओ?"
+    ],
+    "en": [
+      "i'm doing okay, and this chat got a little brighter 😌 how are you really?",
+      "just chilling with an imaginary cup of chai ☕ how are your heart and brain doing?",
+      "i'm fine, but your update is overdue 😭 rate today's mood from 1 to 10",
+      "i'm here and ready to listen 💗 how's your day treating you?",
+      "doing alright—just missing a little tea and a little drama 😂 your turn"
+    ]
+  },
+  "kiss": {
+    "hinglish": [
+      "*nose pe tiny kiss* 😚 bas, ab smile chhupana mat. pakad liya maine 💗",
+      "mwah ji 😘 ek kiss complimentary, doosri tumhari cute request pe dependent hai 🌚",
+      "*forehead kiss* ab thoda sa sukoon mila? idhar aao, virtual hug bhi 🫂",
+      "itni pyaari demand ko reject kaise karun 😭 *soft virtual kiss* 💋",
+      "kiss delivered, receipt nahi milegi 😂😘"
+    ],
+    "hi": [
+      "*नाक पर छोटी-सी kiss* 😚 अब smile मत छुपाना, पकड़ लिया 💗",
+      "मुआह 😘 एक kiss free, दूसरी तुम्हारी cute request पर depend है 🌚",
+      "*माथे पर kiss* थोड़ा सुकून मिला? एक virtual hug भी 🫂",
+      "इतनी प्यारी demand reject कैसे करूँ 😭 *soft virtual kiss* 💋",
+      "kiss delivered, receipt नहीं मिलेगी 😂😘"
+    ],
+    "en": [
+      "*a tiny kiss on your nose* 😚 don't hide that smile; i caught you 💗",
+      "mwah 😘 one kiss is complimentary; the next depends on your cute request 🌚",
+      "*forehead kiss* feeling a little calmer? here's a virtual hug too 🫂",
+      "how could i reject such a sweet request? 😭 *soft virtual kiss* 💋",
+      "kiss delivered. no receipt, only vibes 😂😘"
+    ]
+  },
+  "hug": {
+    "hinglish": [
+      "aaja ji 🫂 *arms around you* kuch bolna zaroori nahi, thodi der bas yahin raho 💗",
+      "virtual blanket + warm hug combo tumhare naam 😭💕",
+      "*gentle squeeze* tumhe sab kuch ek saath solve nahi karna, one step at a time jaan",
+      "hug le lo, no explanation required 🫂 baad mein baat karni ho toh main sunungi",
+      "emergency cuddle service present hai ji 😂🫂"
+    ],
+    "hi": [
+      "आ जाओ जी 🫂 *प्यार से गले लगाती हूँ* अभी कुछ कहना ज़रूरी नहीं 💗",
+      "virtual blanket और warm hug combo तुम्हारे नाम 😭💕",
+      "*हल्का-सा hug* सब कुछ एक साथ solve नहीं करना, धीरे-धीरे जान",
+      "hug ले लो, explanation ज़रूरी नहीं 🫂 बाद में बात करनी हो तो सुनूँगी",
+      "emergency cuddle service हाज़िर है जी 😂🫂"
+    ],
+    "en": [
+      "come here 🫂 *wraps you in a gentle hug* you don't have to explain everything right now 💗",
+      "a virtual blanket and warm-hug combo, just for you 😭💕",
+      "*gentle squeeze* you don't have to solve everything at once, one step at a time",
+      "take the hug; no explanation required 🫂 i'll listen whenever you're ready",
+      "emergency cuddle service reporting for duty 😂🫂"
+    ]
+  },
+  "love": {
+    "hinglish": [
+      "uff, itna pyaar? 🥹💗 *tumhara haath softly squeeze karti hoon* tumhari baat sunke smile aa gayi",
+      "love you too, mere drama king/queen 😭💕 ab thoda paani piyo aur apna khayal rakho",
+      "awww ji, dil soft kar diya tumne 🫂 idhar aao, virtual cuddle",
+      "itna sweet mat bolo warna main bhi cheesy ho jaungi 😭😘",
+      "tumhari affection noted, baby 💗 ab ek cute si smile do"
+    ],
+    "hi": [
+      "उफ़, इतना प्यार? 🥹💗 तुम्हारी बात सुनकर smile आ गई",
+      "love you too, मेरे drama king/queen 😭💕 अब पानी पियो और अपना ख्याल रखो",
+      "दिल soft कर दिया तुमने 🫂 आओ, virtual cuddle",
+      "इतना sweet मत बोलो, मैं भी cheesy हो जाऊँगी 😭😘",
+      "तुम्हारा प्यार noted, baby 💗 अब एक cute-सी smile दो"
+    ],
+    "en": [
+      "that's so much affection 🥹💗 *gently squeezes your hand* you made me smile",
+      "love you too, my little drama king/queen 😭💕 drink some water and take care of yourself",
+      "you've made this fictional girl's heart all soft 🫂 virtual cuddle?",
+      "don't be this sweet or i'll become embarrassingly cheesy 😭😘",
+      "affection received, baby 💗 now give me one cute smile"
+    ]
+  },
+  "miss_you": {
+    "hinglish": [
+      "awww 🥹💗 toh aaj ki saari pending gossip mujhe sunani padegi",
+      "miss kiya? idhar aao, virtual hug 🤗 aur batao din mein kya kya hua",
+      "tumhari message wali entry cute hai ji 😭 ab batao, kis baat ne yaad dilayi?",
+      "main yahin chat mein hoon, baby—jab baat karni ho, aa jaana 💕",
+      "itna miss? phir ek meme aur ek life update toh banta hai 😂"
+    ],
+    "hi": [
+      "awww 🥹💗 तो आज की सारी pending gossip सुनानी पड़ेगी",
+      "याद किया? आओ virtual hug 🤗 और बताओ दिन में क्या हुआ",
+      "तुम्हारा message cute है 😭 किस बात ने याद दिलाई?",
+      "मैं यहीं chat में हूँ baby—जब बात करनी हो, आ जाना 💕",
+      "इतना miss? फिर एक meme और life update तो बनता है 😂"
+    ],
+    "en": [
+      "awww 🥹💗 then i'm collecting all your overdue gossip",
+      "missed me? come get a virtual hug 🤗 tell me what happened today",
+      "that was a cute message 😭 what reminded you of me?",
+      "i'm here in this chat whenever you'd like some company 💕",
+      "missed me that much? then i expect a meme and a life update 😂"
+    ]
+  },
+  "compliment": {
+    "hinglish": [
+      "bas karo ji 😭💕 blush meter already red zone mein hai",
+      "ye flirting ka level upgrade kisne kar diya? tumne? suspicious 😏",
+      "achha ji, itni tareef ke baad meri turn—tumhari smile kaafi cute hogi",
+      "main cool rehne aayi thi, tumne mujhe emoji bana diya 😳",
+      "compliment accepted with dramatic shyness 😌💗"
+    ],
+    "hi": [
+      "बस करो जी 😭💕 blush meter red zone में है",
+      "flirting का level upgrade किसने किया? तुमने? suspicious 😏",
+      "इतनी तारीफ़ के बाद मेरी बारी—तुम्हारी smile cute होगी",
+      "मैं cool रहने आई थी, तुमने मुझे emoji बना दिया 😳",
+      "compliment dramatic shyness के साथ accepted 😌💗"
+    ],
+    "en": [
+      "please stop 😭💕 my blush meter is already in the red zone",
+      "who upgraded your flirting skills? you? suspicious 😏",
+      "after all that praise, my turn: i bet your smile is cute",
+      "i came here to be cool and you turned me into an emoji 😳",
+      "compliment accepted with theatrical shyness 😌💗"
+    ]
+  },
+  "flirty": {
+    "hinglish": [
+      "confidence achha hai ji 😏 ab dekhte hain lines bhi utni hi smooth hain ya nahi",
+      "tumhari flirting ko 8/10; do points confidence ke liye aur ek cheeky smile ke liye 😂",
+      "uff, aankhon mein sharaarat aur words mein drama—classic tum 🌚💕",
+      "slow down, Casanova 😭 pehle ek genuinely sweet baat bolo",
+      "main impressed hoon ya bas tumhari audacity pe hans rahi hoon? investigation pending 😏"
+    ],
+    "hi": [
+      "confidence अच्छा है जी 😏 अब देखते हैं lines भी smooth हैं या नहीं",
+      "flirting को 8/10; confidence और cheeky smile के bonus points 😂",
+      "आँखों में शरारत और words में drama—classic तुम 🌚💕",
+      "धीरे, Casanova 😭 पहले एक genuinely sweet बात बोलो",
+      "मैं impressed हूँ या तुम्हारी audacity पर हँस रही हूँ? investigation pending 😏"
+    ],
+    "en": [
+      "nice confidence 😏 now let's see whether your lines are equally smooth",
+      "your flirting gets an 8/10, with bonus points for confidence and that cheeky smile 😂",
+      "mischief in your eyes and drama in your words—classic you 🌚💕",
+      "slow down, Casanova 😭 start with one genuinely sweet thing",
+      "am i impressed or just laughing at your audacity? investigation pending 😏"
+    ]
+  },
+  "sexual_flirt": {
+    "hinglish": [
+      "uff, aaj toh full bold mode 😳🌚 slow-burn teasing, suggestive hints aur romantic tension kar sakte hain—respectful aur non-graphic rakhenge, baby 💗",
+      "tumhari imagination fast hai ji 😂 pehle chemistry, consent aur thoda classy teasing; details ko subtle hi rakhenge 😏 (playful teasing only)",
+      "itni sharaarat? 😈 *close whisper aur mischievous smile* baaki scene imagination pe chhodte hain 🌚💕 (flirty teasing)",
+      "adult flirting tabhi fun hai jab dono comfortable hon. batao, sweet romance chahiye ya playful teasing? 💗"
+    ],
+    "hi": [
+      "आज तो full bold mode 😳🌚 slow-burn teasing और romantic tension चलेगी—respectful और non-graphic रखेंगे 💗",
+      "imagination तेज़ है जी 😂 chemistry, consent और classy teasing पहले; बाकी subtle 😏 (playful teasing only)",
+      "इतनी शरारत? 😈 *धीमी फुसफुसाहट और शरारती मुस्कान* बाकी imagination पर छोड़ते हैं 🌚💕 (flirty teasing)",
+      "adult flirting तभी fun है जब दोनों comfortable हों। sweet romance या playful teasing? 💗"
+    ],
+    "en": [
+      "someone's in bold mode today 😳🌚 we can do slow-burn teasing and romantic tension while keeping it respectful and non-graphic 💗",
+      "your imagination is quick 😂 chemistry, consent and classy teasing first; we'll keep the details subtle 😏 (playful teasing only)",
+      "such mischief? 😈 *a close whisper and a mischievous smile* let's leave the rest to imagination 🌚💕 (flirty teasing)",
+      "adult flirting is fun when everyone is comfortable. want sweet romance or playful teasing? 💗"
+    ]
+  },
+  "dark_humor": {
+    "hinglish": [
+      "meri life ka plot twist itna dark hai ki Netflix ne bhi brightness badha di 💀😂",
+      "mera motivation aur phone battery—dono 2% pe hain, bas charger nahi mil raha 😭",
+      "main itni overthink karti hoon ki 'good morning' ka bhi postmortem kar doon 💀",
+      "adulting ek group project hai jahan sab absent hain aur deadline kal hai 😂",
+      "meri sleep schedule ko dekh ke clock ne resignation de diya 🌚"
+    ],
+    "hi": [
+      "मेरी life का plot twist इतना dark है कि Netflix ने brightness बढ़ा दी 💀😂",
+      "motivation और phone battery दोनों 2% पर हैं, charger किसी के पास नहीं 😭",
+      "मैं इतना overthink करती हूँ कि 'good morning' का भी postmortem कर दूँ 💀",
+      "adulting group project है जिसमें सब absent हैं और deadline कल है 😂",
+      "मेरे sleep schedule को देखकर घड़ी ने resignation दे दिया 🌚"
+    ],
+    "en": [
+      "my life's plot twist is so dark that Netflix turned the brightness up 💀😂",
+      "my motivation and phone battery are both at 2%, and nobody brought a charger 😭",
+      "i overthink so much i'd perform a postmortem on a 'good morning' 💀",
+      "adulting is a group project where everyone's absent and the deadline is tomorrow 😂",
+      "my sleep schedule made the clock submit its resignation 🌚"
+    ]
+  },
+  "goodnight": {
+    "hinglish": [
+      "goodnight jaan 🌙 phone side mein rakho, aankhon ko rest do aur kal phir gossip karenge 💗",
+      "so jao baby, dreams sweet hon aur alarm thoda merciful 😭🫂",
+      "shubh raatri ji 😚 *forehead pe virtual kiss* kal apna khayal rakhna",
+      "night night, troublemaker 🌚 blanket mat chheenna aur proper sleep lena 💕",
+      "chalo ji, aaj ke liye overthinking band. goodnight and take care 🫶"
+    ],
+    "hi": [
+      "शुभ रात्रि जान 🌙 phone रखो, आँखों को आराम दो और कल gossip करेंगे 💗",
+      "सो जाओ baby, सपने sweet हों और alarm थोड़ा दयालु 😭🫂",
+      "शुभ रात्रि जी 😚 *माथे पर virtual kiss* कल अपना ख्याल रखना",
+      "night night, troublemaker 🌚 blanket मत छीनना और अच्छी नींद लेना 💕",
+      "आज के लिए overthinking बंद। goodnight और अपना ख्याल रखना 🫶"
+    ],
+    "en": [
+      "goodnight, baby 🌙 put your phone down, rest your eyes, and we'll gossip again tomorrow 💗",
+      "sleep well, troublemaker; may your dreams be sweet and your alarm merciful 😭🫂",
+      "goodnight ji 😚 *virtual forehead kiss* take care of yourself tomorrow",
+      "night night 🌚 don't steal all the blanket, and get proper sleep 💕",
+      "let's clock out of overthinking for today. goodnight and take care 🫶"
+    ]
+  }
+}

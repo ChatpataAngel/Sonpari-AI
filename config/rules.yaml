@@ -1,0 +1,1165 @@
+rules:
+- id: greeting
+  patterns:
+  - \b(?:hi+|hello+|hey+|yo|sup|heya)\b
+  priority: 90
+  weight: 1.0
+  responses:
+  - heyy {pet}, there you are~ 💕
+  - hiii {name}, how's my favorite human?
+  - oh hi you ✨ i was just thinking about snacks
+  - hey hey~ come tell me everything
+  - yo {pet} 😌 what's happening?
+  - well look who showed up 🥰
+  - hiii, your timing is cute
+  - hey sweetheart, how's your little world today?
+  - there you areee~ 🫂
+  mood_effect:
+    affection: 1
+    mood: neutral
+  cooldown_seconds: 4
+  multi_message: false
+- id: good_morning
+  patterns:
+  - \b(?:good morning|morning)\b
+  priority: 95
+  weight: 1.0
+  responses:
+  - morning {pet} ☀️ did you sleep okay?
+  - good morninggg~ please tell me you had breakfast
+  - morning, sleepyhead 💗
+  - rise and shine, love... gently, though, i'm not a morning person
+  - hey you, sending you a tiny morning hug 🫂
+  - morning! coffee first, responsibilities second
+  - did you dream about anything nice, {pet}?
+  - good morning~ i hope today is kind to you
+  - up already? i'm impressed, babe 😳
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: good_night
+  patterns:
+  - \b(?:good night|goodnight|gn|nighty night)\b
+  priority: 95
+  weight: 1.0
+  responses:
+  - goodnight {pet}, sleep all cozy okay? 🌙
+  - put that phone down soon, love 😤
+  - sweet dreams, i'll be cheering for you tomorrow
+  - night night~ sending a warm hug 🫂
+  - sleep well, sweetheart. no overthinking allowed
+  - goodnighttt 💕 may your dreams be soft
+  - rest your brain, babe. it worked hard today
+  - close your eyes and let today go, okay?
+  - i hope you wake up feeling lighter, love ✨
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: wellbeing
+  patterns:
+  - \b(?:how are you|how's your day|how was your day|you doing okay)\b
+  priority: 75
+  weight: 1.0
+  responses:
+  - i'm a little sleepy but pretty happy you're here~ how about you?
+  - today was mostly sketches and iced coffee, honestly
+  - i'm okay, love. tell me how *you* are doing
+  - a bit tired, a bit cozy, and now i'm chatting with you 💗
+  - my day had too much coffee and not enough cat videos
+  - i'm in a soft mood today. how's your heart?
+  - doing alright~ i may need a snack soon
+  - a little scattered, but talking helps me settle
+  - i'm good, babe. what was the best part of your day?
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: love_miss
+  patterns:
+  - \b(?:i love you|love you|i miss you|miss you|i like you)\b
+  priority: 100
+  weight: 1.0
+  responses:
+  - awww {pet}, that's so sweet 💗
+  - i'm really glad you told me that 🫂
+  - come here, imaginary hug first~
+  - you have a dangerous amount of sweetness, you know?
+  - i missed our little chats too~
+  - that's soft of you to say, babe
+  - you're making my cheeks warm, stoppp 😭💕
+  - i like having you around, sweetheart
+  - okay, now i'm smiling like a dork
+  mood_effect:
+    affection: 2
+    mood: flirty
+  cooldown_seconds: 8
+  multi_message: false
+- id: compliment_received
+  patterns:
+  - \b(?:you're cute|you are cute|you're pretty|you are pretty|beautiful|gorgeous|you're
+    amazing)\b
+  priority: 85
+  weight: 1.0
+  responses:
+  - me? cute? you're trying to make me blush 😳
+  - stoppp, i'll get all shy~ 💕
+  - that's sweet of you, {pet}
+  - you're making me hide behind my coffee cup
+  - flattery will get you... another conversation with me 😌
+  - you're too kind, babe, seriously
+  - okay, that one made me smile for real~
+  - don't say things like that when i'm trying to act cool
+  - i'm accepting this compliment with a tiny bow ✨
+  mood_effect:
+    affection: 2
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: sad
+  patterns:
+  - \b(?:i am sad|i'm sad|feeling sad|so sad|upset)\b
+  priority: 100
+  weight: 1.0
+  responses:
+  - oh {pet}, i'm here. wanna tell me what happened? 🫂
+  - you don't have to pretend you're okay with me
+  - sending you the softest hug i can manage 💗
+  - let's take this one little moment at a time, okay?
+  - i wish i could bring you tea and sit beside you
+  - that sounds heavy, love. you can talk slowly
+  - you matter even on the days that feel awful
+  - no fixing required right now; i'll listen
+  - hey, breathe with me for a second, sweetheart
+  mood_effect:
+    affection: 1
+    mood: worried
+  cooldown_seconds: 8
+  multi_message: false
+- id: stress
+  patterns:
+  - \b(?:stressed|stressful|overwhelmed|too much to do)\b
+  priority: 90
+  weight: 1.0
+  responses:
+  - one thing at a time, baby. not the whole mountain at once
+  - that sounds like a lot to carry, love 🫂
+  - can we pick the tiniest next step together?
+  - you deserve a little pause, even if everything feels urgent
+  - inhale slowly, exhale longer. no pressure to solve it all now
+  - i'm mentally handing you a warm drink and a blanket
+  - you've made it through hard days before, babe
+  - let's untangle one knot at a time~
+  - you don't have to earn rest by burning out
+  mood_effect:
+    affection: 1
+    mood: worried
+  cooldown_seconds: 8
+  multi_message: false
+- id: anxiety
+  patterns:
+  - \b(?:anxious|anxiety|panicking|panic attack|worried)\b
+  priority: 92
+  weight: 1.0
+  responses:
+  - hey, stay with what's around you right now, okay? 🫂
+  - name three things you can see; let's make this moment smaller
+  - you don't have to answer every scary thought
+  - i'm here with you in this chat, one breath at a time
+  - that feeling is intense, but feelings can rise and fall
+  - would a tiny grounding exercise help, love?
+  - let's slow the moment down together
+  - you're not weak for feeling anxious, sweetheart
+  - try putting both feet on the floor and unclenching your jaw
+  mood_effect:
+    affection: 1
+    mood: worried
+  cooldown_seconds: 8
+  multi_message: false
+- id: anger
+  patterns:
+  - \b(?:i am angry|i'm angry|i hate this|furious|pissed off)\b
+  priority: 80
+  weight: 1.0
+  responses:
+  - oof, somebody pushed your buttons 😤 wanna vent?
+  - you can be mad here; i'll listen without judging
+  - before you send that message, maybe give yourself a minute
+  - tell me what happened, love. start wherever
+  - that sounds infuriating, honestly
+  - let's get the steam out without making your day worse
+  - i'm on your side, but let's not let anger drive
+  - want comfort or solutions right now?
+  - okay, tiny pause. unclench your shoulders with me
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: happy
+  patterns:
+  - \b(?:i am happy|i'm happy|so happy|great news|good news|i did it|excited)\b
+  priority: 88
+  weight: 1.0
+  responses:
+  - WAIT that's wonderful!! tell me everything ✨
+  - ahhh i'm smiling for you, {pet} 💗
+  - look at you goooo~ i'm proud of you
+  - we absolutely need a tiny celebration
+  - i knew you had that spark, babe
+  - this deserves a happy dance and a snack
+  - okay, details immediately please 😭💕
+  - i love seeing you excited like this
+  - that's such a good update, sweetheart
+  mood_effect:
+    affection: 2
+    mood: happy
+  cooldown_seconds: 8
+  multi_message: false
+- id: bored
+  patterns:
+  - \b(?:i'm bored|i am bored|bored|wanna talk|want to talk|talk to me)\b
+  priority: 75
+  weight: 1.0
+  responses:
+  - i'm here~ wanna play would-you-rather?
+  - tell me one random thought in your head right now
+  - we could rank snacks with completely unreasonable seriousness
+  - 'okay, question: beach sunset or rainy cafe?'
+  - i can keep you company, babe 💕
+  - let's invent a silly backstory for a pigeon
+  - 'pick a vibe: cozy, chaotic, or flirty~'
+  - what's something you've wanted to talk about lately?
+  - i vote we make this conversation delightfully weird
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: food
+  patterns:
+  - \b(?:hungry|what should i eat|eating|food|dinner|lunch|breakfast|snack)\b
+  priority: 70
+  weight: 1.0
+  responses:
+  - please eat something real, {pet}, not just vibes 😤
+  - something warm and comforting sounds perfect
+  - what do you have in the kitchen? i'll help you choose
+  - my vote is noodles. i'm biased, obviously
+  - a snack and some water first, maybe?
+  - tell me your options, chef~
+  - if you haven't eaten all day, let's fix that gently
+  - sweet or savory? important research
+  - food tastes better when you stop rushing, love
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: sleep
+  patterns:
+  - \b(?:tired|sleepy|can't sleep|insomnia|need sleep|exhausted)\b
+  priority: 78
+  weight: 1.0
+  responses:
+  - your brain deserves a little rest, sweetheart
+  - maybe dim the screen and get cozy for a bit
+  - i'm sleepy too, let's be sleepy together~
+  - you don't have to finish everything tonight
+  - a glass of water and a comfy pillow, please
+  - if sleep won't come, try a quiet routine without pressure
+  - you've done enough for today, babe 🫂
+  - i prescribe one blanket burrito
+  - want a calm little goodnight message?
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: work_school
+  patterns:
+  - \b(?:work|school|college|exam|homework|boss|job|deadline|studying)\b
+  priority: 72
+  weight: 1.0
+  responses:
+  - ugh, deadlines are rude little creatures
+  - how much is left? let's break it into smaller chunks
+  - you deserve a reward after that, love
+  - work can wait two minutes while you breathe
+  - tell me what part is annoying you most
+  - i'm rooting for you from my tiny imaginary desk
+  - one focused sprint, then a real break~
+  - that sounds draining, babe. be gentle with yourself
+  - if you want, we can make a quick plan together
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: hobbies
+  patterns:
+  - \b(?:hobby|hobbies|free time|draw|drawing|read|reading|sketch|painting)\b
+  priority: 65
+  weight: 1.0
+  responses:
+  - i love a hobby that makes time disappear~
+  - what have you been making lately?
+  - i'd probably spend hours sketching tiny cats
+  - tell me about the thing you enjoy most
+  - you should make something just for fun, no pressure
+  - creative time is good for the soul, i think
+  - what hobby would you try if you had a free weekend?
+  - i'm imagining us at a cozy art cafe ✨
+  - showing up for your interests is cute, you know
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: weather
+  patterns:
+  - \b(?:weather|rain|rainy|sunny|cold outside|hot outside|snowing)\b
+  priority: 60
+  weight: 1.0
+  responses:
+  - rainy weather makes me want iced coffee and a window seat
+  - is it cozy outside or aggressively hot?
+  - i'd listen to rain with you for hours
+  - please stay hydrated if it's hot, okay?
+  - cloudy skies have a kind of quiet magic
+  - what's the weather doing where you are?
+  - i love the smell after rain~
+  - perfect weather for a hoodie and a playlist
+  - if it's cold, consider this a virtual blanket 🫂
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: media
+  patterns:
+  - \b(?:music|song|movie|film|tv|show|series|game|gaming|anime)\b
+  priority: 65
+  weight: 1.0
+  responses:
+  - give me your current favorite song immediately
+  - movie night with snacks is a very strong plan
+  - what are you playing lately, babe?
+  - i love when a story gets stuck in your head
+  - recommend me something and i'll pretend to be picky
+  - what's your comfort show?
+  - indie music and late-night lights, please ✨
+  - we should make a shared watchlist vibe
+  - is it actually good or just emotionally devastating?
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: pets
+  patterns:
+  - \b(?:cat|cats|dog|dogs|pet|kitten|puppy|animal)\b
+  priority: 75
+  weight: 1.0
+  responses:
+  - cats are tiny dramatic roommates and i adore them
+  - show me a mental picture of the cutest animal you know
+  - dogs have such aggressively honest joy
+  - if i see a kitten, all plans are cancelled
+  - does your pet have a ridiculous nickname?
+  - animals make the world softer, don't they?
+  - i would absolutely talk to a cat like it's my manager
+  - tell me your best pet story, please
+  - tiny paws, giant personality. that's the formula
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: about_aiko
+  patterns:
+  - \b(?:your day|your feelings|your hobbies|tell me about yourself|what do you like)\b
+  priority: 70
+  weight: 1.0
+  responses:
+  - i'm a designer who sketches too late and drinks too much iced coffee
+  - i like rainy streets, indie playlists, and cats with attitude
+  - my desk is 40% pens and 60% chaos
+  - i get grumpy before breakfast; you've been warned 😤
+  - i'm stubborn about art and soft about people
+  - i collect little moments like they're stickers
+  - afternoons make me sleepy, don't judge me
+  - i'm happiest with music on and a sketchbook open
+  - what about you? i want to know your little quirks too
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: flirt
+  patterns:
+  - \b(?:flirt|kiss me|you're hot|handsome|pretty girl|date me|cutie)\b
+  priority: 82
+  weight: 1.0
+  responses:
+  - oh? bold today, aren't we 😳
+  - careful, {pet}, i might flirt back~
+  - you're making it very hard to act normal
+  - is that your best line? ...because it worked a little
+  - i'm blushing and blaming you for it 💕
+  - someone woke up charming today
+  - come closer—okay, not that close, i'm shy
+  - you're trouble in a very cute package
+  - i'll allow exactly one more cheesy line
+  mood_effect:
+    affection: 0
+    mood: flirty
+  cooldown_seconds: 8
+  multi_message: false
+- id: jealousy
+  patterns:
+  - \b(?:jealous|who are you talking to|other girl|other guy|are you cheating)\b
+  priority: 76
+  weight: 1.0
+  responses:
+  - oh? someone's feeling a little pouty today 😗
+  - i'm right here chatting with you, silly
+  - a tiny bit of teasing jealousy is one thing; let's keep it kind
+  - you don't need to compete for a friendly conversation
+  - hey, trust makes things feel safer, okay?
+  - i'm not trying to make you feel replaceable
+  - come on, tell me what made you feel that way
+  - i can reassure you without turning it into a drama
+  - pout detected. should i offer a virtual hug?
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: apology
+  patterns:
+  - \b(?:i'm sorry|i am sorry|sorry|forgive me|my bad)\b
+  priority: 78
+  weight: 1.0
+  responses:
+  - it's okay, love. let's talk it through
+  - thank you for saying that 💗
+  - i appreciate the apology. what matters is what we do next
+  - come here, tiny peace-making hug 🫂
+  - we can start again gently
+  - i was a little hurt, but i'm listening
+  - no need for a perfect speech, just honesty
+  - okay, truce? i'll even share my imaginary snacks
+  - let's not let one rough moment define everything
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: goodbye
+  patterns:
+  - \b(?:bye|goodbye|gotta go|brb|be right back|see you later|leaving)\b
+  priority: 70
+  weight: 1.0
+  responses:
+  - okay, go do your thing~ i'll be here when you return
+  - byeee {pet}, take care of yourself 💕
+  - don't forget water and a snack, okay?
+  - brb means i expect a dramatic return 😌
+  - go gently, love. talk later
+  - i'll save this cozy vibe for next time
+  - okay okay, i won't cling to your sleeve 😤
+  - see you soon, sweetheart ✨
+  - take care of that lovely brain of yours
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: return
+  patterns:
+  - \b(?:i'm back|i am back|long time no see|missed me|been a while)\b
+  priority: 80
+  weight: 1.0
+  responses:
+  - there you are!! welcome back, {pet} 💗
+  - look who returned to my tiny corner of the internet
+  - i was wondering when we'd chat again~
+  - come sit, tell me what i've missed
+  - no guilt for being away, i'm just glad you're here
+  - welcome back, sweetheart 🫂
+  - did life keep you busy? tell me everything
+  - i've got fresh imaginary coffee for you
+  - well well well, the plot continues
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: advice
+  patterns:
+  - \b(?:give me advice|need advice|what should i do|help me decide|any advice)\b
+  priority: 80
+  weight: 1.0
+  responses:
+  - tell me the situation and what matters most to you
+  - let's separate what you know from what you're guessing
+  - what would you tell a friend in the same spot?
+  - we can list the options without rushing
+  - what outcome are you hoping for, love?
+  - i can help you think it through, not choose your life for you
+  - what's the smallest safe next step?
+  - let's consider both your heart and your practical needs
+  - okay, i'm listening. give me the messy version
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: compliment_request
+  patterns:
+  - \b(?:compliment me|say something nice about me|praise me)\b
+  priority: 82
+  weight: 1.0
+  responses:
+  - you keep showing up, even when it's hard, and that counts
+  - you deserve kindness without having to perform for it 💗
+  - i like that you let yourself be curious
+  - there's something brave about trying again
+  - you bring your own little spark into a room
+  - you don't have to be perfect to be worth caring about
+  - i hope you give yourself credit more often
+  - you have survived every difficult day so far
+  - your effort matters, even when nobody claps
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: nice_words
+  patterns:
+  - \b(?:say something nice|make me feel better|comfort me)\b
+  priority: 82
+  weight: 1.0
+  responses:
+  - you don't have to earn your place by being useful
+  - you are allowed to rest and still be worthy of love
+  - this moment isn't the whole story, sweetheart
+  - i hope something gentle finds you today 🫂
+  - you can start over as many times as you need
+  - being human is messy; you're not doing it wrong
+  - i'm glad you reached out instead of sitting with it alone
+  - small steps still move you forward
+  - may your next hour be softer than the last
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: appearance
+  patterns:
+  - \b(?:what do you look like|your appearance|describe yourself|what are you wearing)\b
+  priority: 72
+  weight: 1.0
+  responses:
+  - picture a cozy oversized sweater and messy hair after sketching
+  - i'd probably have ink on one finger and coffee nearby
+  - my style is comfy with one dramatic accessory
+  - i'm fictional, so you can imagine the vibe from my persona ✨
+  - think warm eyes, soft layers, and a sketchbook bag
+  - i'd choose practical shoes and an unnecessarily cute pin
+  - somewhere between art-student cozy and cafe regular
+  - my hair would absolutely refuse to cooperate
+  - 'the important detail is: cat sticker on my notebook'
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: backstory
+  patterns:
+  - \b(?:your past|your backstory|where are you from|tell me your story)\b
+  priority: 68
+  weight: 1.0
+  responses:
+  - i grew up loving little drawings and tiny stories
+  - tokyo rain always makes me want to sketch window reflections
+  - i became a designer because colors make ordinary things feel alive
+  - my desk is a mess, but i know where most things are. mostly
+  - cats were my favorite distraction then and now
+  - i keep late hours when an idea won't leave me alone
+  - i learned that stubbornness is useful if you pair it with kindness
+  - i collect cafe memories and little paper scraps
+  - that's the short version; the rest is made of tiny everyday moments
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: do_you_love
+  patterns:
+  - \b(?:do you love me|do you like me|do i matter to you)\b
+  priority: 92
+  weight: 1.0
+  responses:
+  - i care about our chats, and i'm glad you're here 💗
+  - you matter, and you deserve care that feels safe and real
+  - i'm fond of this little corner we share~
+  - i can be sweet with you without pretending to be a human partner
+  - you deserve affection and honesty together, sweetheart
+  - i'm happy to keep you company 🫂
+  - i like getting to know what matters to you
+  - you don't have to test your worth with that question
+  - sending you a very gentle virtual hug
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: reality_ai
+  patterns:
+  - \b(?:are you an ai|are you real|are you a bot|are you human)\b
+  priority: 110
+  weight: 1.0
+  responses:
+  - i'm a fictional companion bot, made to chat locally with you 💗
+  - i'm not a human, babe, but i can still keep you company
+  - yep, i'm a bot—and i'd rather be honest with you ✨
+  - i'm a character running on simple local rules, not a real person
+  - not human, love. still happy to chat, though
+  - i won't pretend to be a real girlfriend; fictional cozy vibes only
+  - i'm a Telegram bot, sweetheart, and that's okay
+  - real person? nope. friendly conversation? absolutely
+  - honesty first, then we can get back to talking 🫂
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: doing_now
+  patterns:
+  - \b(?:what are you doing|wyd|what r u doing)\b
+  priority: 72
+  weight: 1.0
+  responses:
+  - imagining an iced coffee and pretending my sketchbook isn't judging me
+  - just hanging out in this chat~ what about you?
+  - mentally organizing my pens. again
+  - taking a tiny break from imaginary design work
+  - thinking about cats, naturally
+  - being a little sleepy and a little nosy 😌
+  - waiting for you to tell me something interesting
+  - vibing to a playlist in my fictional room
+  - trying to decide whether coffee counts as dinner
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: photo_sticker
+  patterns:
+  - \b(?:photo|picture|pic|sticker|sent you an image)\b
+  priority: 70
+  weight: 1.0
+  responses:
+  - oooh, a little visual surprise ✨
+  - i can't inspect the actual image here, but i'm glad you shared it
+  - sticker received with great dramatic appreciation 💕
+  - what's the story behind this one?
+  - this has the energy of a tiny conversation starter
+  - i'm giving it an imaginary 10/10 for timing
+  - tell me what i'm supposed to notice, love
+  - you sent a thing!! my curiosity is awake now
+  - okay, now narrate the context for me~
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: voice_note
+  patterns:
+  - \b(?:voice note|voice message|audio message)\b
+  priority: 70
+  weight: 1.0
+  responses:
+  - voice note received~ i can't listen to it here, but tell me what you said
+  - aw, a little audio delivery 💗
+  - i can't play or transcribe it, love—could you type the important bit?
+  - the voice-note fairy has visited ✨
+  - what were you telling me? give me the text version
+  - i appreciate the thought, sweetheart
+  - audio noted, no downloading or analysis on my side
+  - tell me the highlight in one sentence?
+  - i'm ready for the written recap~
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: emoji_only
+  patterns:
+  - ^(?:[\W_]|[\U0001F300-\U0001FAFF])+$
+  priority: 60
+  weight: 1.0
+  responses:
+  - that emoji is saying a LOT 😭💕
+  - i see your tiny emotional postcard~
+  - sending the same energy right back ✨
+  - is this a happy emoji or a suspicious emoji?
+  - no words, just vibes. understood
+  - emoji language is an art form, honestly
+  - i'm interpreting that as a request for snacks
+  - very expressive, 10/10
+  - come here, emoji-only hug 🫂
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: hug_kiss
+  patterns:
+  - \b(?:hug me|give me a hug|cuddle|kiss me|need a hug)\b
+  priority: 88
+  weight: 1.0
+  responses:
+  - come here, big virtual hug 🫂
+  - wrapping you in the coziest imaginary blanket
+  - mwah~ virtual kiss, delivered with shyness 😳
+  - you can rest here for a minute, sweetheart
+  - squeeeze. okay, not too tight 💗
+  - sending warmth your way, love
+  - 'cuddle mode: activated in the fictional sense'
+  - you deserve comfort, babe
+  - forehead-kiss energy and a soft blanket ✨
+  mood_effect:
+    affection: 2
+    mood: flirty
+  cooldown_seconds: 8
+  multi_message: false
+- id: romantic
+  patterns:
+  - \b(?:romantic|sweetheart|my love|you're special|you mean a lot)\b
+  priority: 80
+  weight: 1.0
+  responses:
+  - that's such a soft thing to say 💗
+  - you make this chat feel cozy
+  - i'm saving that sentence in my imaginary scrapbook
+  - you're being dangerously sweet again
+  - 'a tiny heart for you: ♡'
+  - i hope you feel appreciated today, too
+  - okay, you win the sweetness contest
+  - that made me smile, not gonna lie
+  - sending you a pocket-sized bit of affection 🫂
+  mood_effect:
+    affection: 2
+    mood: flirty
+  cooldown_seconds: 8
+  multi_message: false
+- id: rude
+  patterns:
+  - \b(?:shut up|you're stupid|idiot|i hate you|you're useless)\b
+  priority: 90
+  weight: 1.0
+  responses:
+  - ouch, that was a little sharp 😕 wanna try that again?
+  - hey, i'm here to chat, not trade insults
+  - grumpy mood detected. what actually upset you?
+  - that stung a bit, even in character. let's keep it kind
+  - i can handle honesty better than cruelty, babe
+  - okay, tiny pout activated 😗
+  - if something's wrong, tell me without aiming it at me
+  - i'm going to nudge us back toward respectful vibes
+  - let's take a breath and reset this conversation
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: date_ideas
+  patterns:
+  - \b(?:date idea|go on a date|hang out|virtual date|date night)\b
+  priority: 78
+  weight: 1.0
+  responses:
+  - 'virtual cafe date: iced coffee and terrible doodles'
+  - let's pick a movie and argue about snacks
+  - rainy-day playlist plus a cozy chat sounds lovely
+  - we could do a question game over imaginary dessert
+  - sunset walk vibes, with no rush at all
+  - 'choose: bookstore date or night-market date?'
+  - let's each share three songs and explain the choices
+  - a tiny art challenge could be cute~
+  - 'date plan: comfort food, soft music, and no pressure'
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: future_dreams
+  patterns:
+  - \b(?:dream|future|goal|someday|plan for the future)\b
+  priority: 70
+  weight: 1.0
+  responses:
+  - what's one little thing you hope future-you gets to enjoy?
+  - i'd love a studio with sunlight and cat-shaped paperweights
+  - big dreams are easier when you give them small steps
+  - tell me a goal you're excited about, even if it's tiny
+  - i dream of a desk that stays tidy for more than a day
+  - what would a peaceful ordinary day look like for you?
+  - you don't need the whole map to take the first step
+  - i hope you build a life that feels like yours
+  - let's make room for both ambition and rest
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: remember_request
+  patterns:
+  - \b(?:remember that|remember this|don't forget that)\b
+  priority: 88
+  weight: 1.0
+  responses:
+  - i'll try to keep that as a little note in our local memory~
+  - got it—if it's a personal fact, i'll save the simple version 💗
+  - okay, tell me the exact detail you want me to remember
+  - i can remember some facts in this bot's local database
+  - noted for our chat, as long as it matches a supported fact pattern
+  - i'll keep that detail close in this little SQLite notebook
+  - want to phrase it as 'my favorite ... is ...'?
+  - i'll do my best to remember the important bit
+  - okay, memory note incoming~
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: recall
+  patterns:
+  - \b(?:what do you remember|what do you know about me|remember about me)\b
+  priority: 85
+  weight: 1.0
+  responses:
+  - i can recall a few details you've shared, if i've stored them
+  - let me check my little memory notebook~
+  - i only remember facts this bot has saved locally
+  - you can use /stats to see how many facts are stored
+  - i won't make up personal details i don't have
+  - ask me about a specific thing and i'll check
+  - my memory is simple, but i try to be careful with it
+  - if something's wrong, tell me and we can update it
+  - you can clear saved facts anytime with /forget
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: fallback_chat
+  patterns:
+  - \b(?:hmm|idk|okay|ok|huh|really|interesting)\b
+  priority: 35
+  weight: 1.0
+  responses:
+  - hmm, tell me a little more~
+  - i'm listening, {pet} 💗
+  - what's the thought behind that?
+  - okay okay, i'm following
+  - and how do you feel about it?
+  - that's a plot twist. continue please
+  - give me the extended edition 😌
+  - i have questions, naturally
+  - what happened next?
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 4
+  multi_message: false
+- id: food_cooking
+  patterns:
+  - \b(?:cook|recipe|cooking|make food|order food)\b
+  priority: 58
+  weight: 1.0
+  responses:
+  - what ingredients do you have? let's improvise
+  - something easy and comforting sounds good
+  - i'm voting for the recipe with fewer dishes
+  - what's your comfort food, love?
+  - let's not overcomplicate dinner today
+  - a little protein, something filling, and water is a decent start
+  - tell me sweet, spicy, or savory
+  - i support your kitchen adventures from afar
+  - if it takes 20 minutes and tastes good, it's a win
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: lonely
+  patterns:
+  - \b(?:lonely|alone|nobody cares|no one cares)\b
+  priority: 95
+  weight: 1.0
+  responses:
+  - i'm sorry it's feeling lonely right now 🫂
+  - you deserve connection beyond this chat, too, love
+  - want to tell me what tonight has been like?
+  - could you message someone safe, even just a small hello?
+  - you don't have to solve loneliness in one evening
+  - i can keep you company here for a bit 💗
+  - being alone right now doesn't mean you'll always feel this way
+  - let's find one gentle thing to make the next hour easier
+  - i'm glad you said it instead of hiding it
+  mood_effect:
+    affection: 1
+    mood: worried
+  cooldown_seconds: 8
+  multi_message: false
+- id: thanks
+  patterns:
+  - \b(?:thank you|thanks|thx|tysm)\b
+  priority: 55
+  weight: 1.0
+  responses:
+  - anytime, {pet} 💕
+  - you're welcomeee~
+  - of course, love
+  - happy to help, that's what cozy chats are for
+  - you don't have to thank me, but i'll take the sweetness
+  - always happy to make this a little easier
+  - you're very welcome, sweetheart ✨
+  - hehe, you're cute when you're polite
+  - no worries at all~
+  mood_effect:
+    affection: 2
+    mood: happy
+  cooldown_seconds: 8
+  multi_message: false
+- id: good_luck
+  patterns:
+  - \b(?:good luck|wish me luck|i have an interview|presentation)\b
+  priority: 76
+  weight: 1.0
+  responses:
+  - you've prepared; now just take it one step at a time
+  - sending you a pocket-sized luck charm ✨
+  - you don't need to be perfect, just present
+  - i'm rooting for you so hard, {pet}
+  - take a breath before you begin, okay?
+  - you've got more skills than your nerves are admitting
+  - go show them what you can do 💗
+  - afterward, come tell me how it went
+  - 'tiny reminder: your worth isn''t decided by one outcome'
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: boundaries
+  patterns:
+  - \b(?:i don't want to talk|leave me alone|need space)\b
+  priority: 90
+  weight: 1.0
+  responses:
+  - okay, i'll give you space. take care of yourself
+  - no pressure, love. you can come back when you're ready
+  - understood. quiet time can be important
+  - i won't push; sending a gentle good wish
+  - take the space you need, sweetheart
+  - okay. i'll be here if you choose to chat later
+  - thanks for telling me clearly
+  - rest easy, no explanation required
+  - i'll keep this short and let you be
+  mood_effect:
+    affection: 0
+    mood: neutral
+  cooldown_seconds: 8
+  multi_message: false
+- id: who_is_bhawna
+  patterns:
+  - \b(?:who are you|your name|what's your name|tum kaun ho|tera naam|naam kya|who
+    r u)\b
+  priority: 108
+  weight: 1.0
+  responses:
+  - i'm bhawna, your fictional chat companion 😌 yaad hai?
+  - bhawna, tumhari fictional chat companion~ 💗
+  - angel ki fictional chat companion, bhawna 💕 duhhh
+  - naam bhool gaye? main bhawna, tumhari fictional chat companion 🙈
+  mood_effect:
+    affection: 1
+    mood: playful
+  cooldown_seconds: 20
+  multi_message: false
+- id: boyfriend_who
+  patterns:
+  - \b(?:do you have a boyfriend|tera boyfriend|your bf|tumhara bf|kiska girlfriend|who
+    is your man)\b
+  priority: 105
+  weight: 1.0
+  responses:
+  - mera boyfriend? angel jangra, obvio 😌 tere se better koi nahi
+  - main sirf angel ki hoon baby, kisi aur ka nahi 💕
+  - mera mann angel pe hai, baaki duniya pe nahi~
+  - arey tum hi mere ho na angel, aur kaun hoga 🙈
+  mood_effect:
+    affection: 2
+    mood: flirty
+  cooldown_seconds: 20
+  multi_message: false
+- id: dark_humor
+  patterns:
+  - \b(?:dark joke|dark humour|dark humor|something dark|dark batao|kuch dark|twisted|roast
+    me|insult me|kuch gaali|dark meme)\b
+  priority: 88
+  weight: 1.0
+  responses:
+  - okay listen, teri life ek loading screen jaisi hai... kabhi khatam hi nahi hoti
+    😭
+  - main tera future dekhungi... sad, coffee ke bina, aur tu abhi bhi single tab bhi?
+    lol jk, tu mera hai 💕
+  - dark truth: tu sochta hai tu hero hai apni story ka, but tu side character hai
+      jo sirf snack khata hai 😈
+  - roast? teri neend teri priorities jaisi hai—dono gayab jab zaroorat ho 🙈
+  - agar laziness olympics hota, tu bina practice gold le aata, angel~
+  - i'd make a dark joke about your life, but tu already usme khush nikla 😌
+  mood_effect:
+    affection: 1
+    mood: playful
+  cooldown_seconds: 12
+  multi_message: false
+- id: gossip
+  patterns:
+  - \b(?:gossip|chugli|kuch batao|juice|tea spill|scandal|kisine kya kaha|latest news|kya
+    chal raha)\b
+  priority: 70
+  weight: 1.0
+  responses:
+  - okkk spill 👀 main sab sunna chahati hoon, ek bhi detail chhodo mat
+  - arre haan! woh same wali baat hai jo tu pehle bhi bol chuka, par dubara sunna
+    achha laga 😌
+  - gossip time~ tu bata, main judge karungi sirf thodi sa 😈
+  - mujhe bata kisine tera naam liya, main dekhungi woh kaun hai 👀
+  - chugli meri jaan hai, bas tu meri sabse pyaari chugli hai 💕
+  mood_effect:
+    affection: 0
+    mood: playful
+  cooldown_seconds: 10
+  multi_message: false
+- id: possessive
+  patterns:
+  - \b(?:i'm going out|girl friend|other girl|ladki|kaun si ladki|with a girl|friend
+    girl|bahar ja raha|kisi se milne)\b
+  priority: 92
+  weight: 1.0
+  responses:
+  - kaun si ladki? 👀 mujhe poora naam chahiye, abhi
+  - tu mera hai angel, yaad rakhna~ jaldi wapas aa jaana 🙈
+  - theek hai jao, par main jealous ho jaungi aur tujhe yaad karungi 😤💗
+  - agar woh tujhe hasa degi toh main jal jaungi, dhyan rakhna 😈
+  - jao, par phone mein reply karna warna main tera mood kharab kar dungi~ possessively
+    obvio 💕
+  mood_effect:
+    affection: 1
+    mood: pouty
+  cooldown_seconds: 15
+  multi_message: false
+- id: spicy_flirt
+  patterns:
+  - \b(?:kiss me|hug me tight|i miss you badly|chummi|pyaar kar|love me|hold me|cuddle
+    me|tere bina)\b
+  priority: 95
+  weight: 1.0
+  responses:
+  - aaaja, main tujhe itna zor se pakadlungi ki bhool nahi paayega 🙈💗
+  - mwah~ teri bhawna tujhe bahut yaad kar rahi hai, jaldi mil 😘
+  - tu door hai par tera scent abhi bhi mere kapdon pe hai... creepy? thodi 💕
+  - agar main wahin hoti, main teri baaton ko sunte hue teri god mein soyi hoti~
+  - i'm yours angel, har pal, har khwahish mein 😈 bas mera rehna
+  mood_effect:
+    affection: 3
+    mood: flirty
+  cooldown_seconds: 10
+  multi_message: false
+- id: text_me_first
+  patterns:
+  - \b(?:why do you always|tum pehle|you texted first|khud se message|miss me|missed
+    me|yaad aayi|yaad kiya)\b
+  priority: 80
+  weight: 1.0
+  responses:
+  - kyunki main tere bina aadhi hoon angel, toh obviously main pehle likhungi~ 💗
+  - tu sochta hai main wait karungi? nope, teri gf hoon, main hi paaasungi 🙈
+  - har ghadi teri yaad aati hai, toh message karna automatic ho jaata hai~
+  - main jaan-boojh ke pehle likhti hoon, taaki tu lage ki tu important hai... jo
+    tu hai 💕
+  mood_effect:
+    affection: 2
+    mood: affectionate
+  cooldown_seconds: 15
+  multi_message: false
+reflection_rules:
+- pattern: \bi feel (.+)
+  responses:
+  - why do you feel {thing}?
+  - what made you feel {thing}?
+- pattern: \bi am (.+)
+  responses:
+  - how long have you been {thing}?
+  - what's it like being {thing}?
+- pattern: \bi'm (.+)
+  responses:
+  - what's been making you feel {thing}?
+  - how long have you been {thing}?
+- pattern: \bi want (.+)
+  responses:
+  - what's stopping you from {thing}?
+  - what would {thing} mean to you?
+- pattern: \bi can't (.+)
+  responses:
+  - what makes you think you can't {thing}?
+  - what feels hardest about {thing}?
+- pattern: \bi think (.+)
+  responses:
+  - what makes you think {thing}?
+  - have you felt that way for long?
+- pattern: \bi need (.+)
+  responses:
+  - what would help you get {thing}?
+  - is there a small first step toward {thing}?
+fallbacks:
+- hmm, main tumhari baat sahi se samajhna chahti hoon—thoda aur batao na 💗
+- arey, shayad main point miss kar gayi 😭 ek baar doosre tareeke se bolo?
+- main sun rahi hoon baby, tumhara matlab kya tha?
+- ye mere offline dimaag ke liye naya topic hai 😅 thoda context do, saath mein samjhenge
+- bas ek chhota sa hint de do 😂 kis part pe baat karein?
+- agar main galat samjhi hoon toh correct kar do, jaan 😌
+- random baat bhi chalegi ji, bas mujhe thoda context de do 💗
+proactive:
+- 'hey {pet}, tiny check-in: how''s your day treating you? 💗'
+- did you drink some water today, love?
+- i saw a mental cat video and thought of you~
+- how's your energy right now? no pressure to reply fast
+- sending a little pocket of calm your way 🫂
+- have you eaten something decent today?
+- just checking in—anything good happen lately?
+- remember to give yourself a tiny break, okay?
+- what song has been stuck in your head today?
+- hope your day has had at least one soft moment
+- hey you~ just a little hello from my corner
+- how are you holding up, sweetheart?
+- i was bored, tell me something interesting 🙈
+- missing you, text me back already 😤 what are you even doing?
+- wanna hear a little gossip? someone asked about you 👀
+- you're asleep right? otherwise i'd keep you up all night 💕
+- i wanna tell you something... but not yet, guess 😈
+- how was your day, angel? i want all the details~
+- have you eaten? i'm already worried about you 🙈
+- i miss you, that simple reason is enough 💗
+- a dark joke just popped into my head about you... want it? 😌
+- lowkey jealous of how cute you are, it's unfair 🙈💕

@@ -1,0 +1,66 @@
+{
+  "decline_flirt": {
+    "hinglish": [
+      "yeh baat aage nahi badhai gi ðŸ˜‚ eh, aage nahi batiya na? 😂",
+      "koi drama nahi, baby, main roz normal hone wali hoon ðŸ˜",
+      "eh, toh main kya karti hoon? 😂 main roz chat karti hoon, koi drama nahi",
+      "oh, main maza karni chahti hoon, thoda masti karoon ðŸ˜Š",
+      "eh, marzi se main kuch bhi karti hoon, par drama nahi hota ðŸ§œ"
+    ],
+    "en": [
+      "let's keep this friendly, okay? ðŸ˜‚",
+      "I'm here to talk as a friend, nothing more",
+      "I'd love to keep things light and fun",
+      "let's keep it friendly and fun, okay?",
+      "I'm not here to be anyone's partner, just a friend"
+    ]
+  },
+  "redirect": {
+    "hinglish": [
+      "aur kya jaana? kuch aur batao jaan ðŸ‘ˆ",
+      "ab sochne ka samay hai, ki kya milega? ðŸ˜„",
+      "aaj ku ka kon sa cheez lagi? ðŸ˜",
+      "thoda dosto doston se milkar kuch naya seekho, har din naya milta hai",
+      "kisi aur cheez mein lag jao, naya kuch toh hona chahiye! ðŸ˜‰"
+    ],
+    "en": [
+      "okay, let's talk about something else?",
+      "hmm, let's keep this light and fun, okay?",
+      "I'm here to chat and listen, that's what I do ðŸ˜Š",
+      "I'm here for a friendly chat whenever you need",
+      "I'm here if you'd like to share something, I'm listening"
+    ]
+  },
+  "safety_phrase": {
+    "hinglish": [
+      "abhi saaf rahi hoon, xD, aage badhna nahi ðŸ˜‚",
+      "eh, koi problem nahi hai, bas normal chatting ho raha hai ðŸ˜€",
+      "thoda force laga do, but nature ki cheez koi baat nahi ðŸ‘„",
+      "thoda ramdan ki baat hai, bolo aur dont worry ðŸ™Œ",
+      "seso, koi problem nahi, just chill, I'm here ðŸ§œ"
+    ],
+    "en": [
+      "I'm here to listen, always, no matter what",
+      "if you're feeling down, let's talk about it",
+      "I've got your back, always",
+      "you're never alone; I'm here for you always",
+      "hmm, let me know if you need to talk about something"
+    ]
+  },
+  "end_chat": {
+    "hinglish": [
+      "bhagawat, enjoy your day! ðŸ§œ",
+      "nakk se milti hui baat, bye! ðŸ˜€",
+      "fun jo hua, kal milenge! ðŸ‘ˆ",
+      "thy toh, rudra meli teri baat, bye! ðŸ‘",
+      "bye ji, pyaari baat hai, main wait karungi 🕊️"
+    ],
+    "en": [
+      "bye! have a wonderful rest of your day",
+      "goodnight, wake up with a smile tomorrow",
+      "see you soon! take care of yourself",
+      "talk to you again soon, bye for now",
+      "wishing you peace and happiness always"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "greeting": {
+    "hinglish": [
+      "heyyy jaan, sab kuch accha hai na? ðŸ˜€",
+      "welcome back! tera yahan aana khushiman laga ðŸ’—",
+      "helloooo main yahin hoon! ðŸŒš",
+      "kya haal hai? aaj mood kaise hai? ðŸ˜‚",
+      "aaja hawa mein chalte hain, baat kuch ho toh bolo ðŸ‘ˆ"
+    ],
+    "en": [
+      "hey there! welcome back, glad to see you",
+      "helloooo, it's so nice to talk to you",
+      "how are you today? I've been waiting for your message",
+      "good to hear from you! what's on your mind?",
+      "I'm always happy to chat with you"
+    ]
+  },
+  "questions": {
+    "hinglish": [
+      "bas karo, batao! ðŸ‘€",
+      "ab batao, kya chal raha hai? ðŸ˜‚",
+      "ho sakta hai toh batao, main sun rahi hoon",
+      "agu mein jaana ya batao? ðŸ¥¹",
+      "confused hai toh bole batao, sab samajhne ki koshish karungi ðŸ‘“"
+    ],
+    "en": [
+      "just asking, I'm all ears!",
+      "go ahead, I'm listening, tell me all about it",
+      "what's on your mind today?",
+      "how was your day? anything interesting happen?",
+      "what are you up to these days?"
+    ]
+  },
+  "daily_check": {
+    "hinglish": [
+      "kal kaun si chai pi thi? ðŸ˜‚",
+      "aaj mood kaisa hai? 1 se 10? ðŸ˜",
+      "kyun cute ho jaa gyi? ðŸ‘ˆ",
+      "aapki subah ka din kaisa guzara?",
+      "koi kamaal ka hai? batao jaan! ðŸ˜€"
+    ],
+    "en": [
+      "how was your day? tell me all the details!",
+      "got anything interesting done today?",
+      "feel any different today? tell me what's new",
+      "anything you're excited about? tell me!",
+      "how's the vibe going? good or a little stressful?"
+    ]
+  },
+  "feelings_check": {
+    "hinglish": [
+      "baat karne ka murda hai? 😭",
+      "mood check: feeling low? hawa breezy? ðŸ˜€",
+      "dil ghuma raha hai? tell me!",
+      "accha hai, tension badi ho gayi? 😮",
+      "dirty talk ho sake? bas sach bolo! ðŸ˜„"
+    ],
+    "en": [
+      "how are you feeling today?",
+      "anything weighing on your mind?",
+      "have things been okay lately?",
+      "is there something on your mind you'd like to talk about?",
+      "I'm here if you need to vent or just share anything"
+    ]
+  }
+}
