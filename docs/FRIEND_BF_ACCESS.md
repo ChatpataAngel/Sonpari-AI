@@ -1,14 +1,59 @@
-# Friend / BF access model
+<div align="center">
 
-- The configured `OWNER_ID` is the original owner and always receives BF-style companion replies.
-- Everyone else can chat in Friend mode without a pass.
-- `/pass <code>` in a private chat compares the supplied code to `OWNER_CODE`. A successful verification stores only `bf_access=1`; the shared code itself is not saved to the user's profile.
-- `/unpass` returns a pass holder to Friend mode.
-- `/role` shows the current chat tier; `/bfusers` lists BF-tier profiles for the original owner only; `/checkin 1-10` saves a mood score as a mood category.
-- BF access changes companion tone only. It does not grant owner-only admin commands or access to another user's private data.
+# 👥 Friend / BF Access Model
 
-## Configuration
+**Everyone can chat. The owner — or a pass holder — gets a warmer tone.**
 
-Set `OWNER_ID` to the original owner's numeric Telegram user ID. Set `OWNER_CODE` in the hosting provider's private environment settings. The sample `.env.example` carries the requested initial value `bubuiloveyou`; change it before publishing the archive to anyone who should not know the pass. Send `/pass <code>` only in a private chat with the bot, never in a group.
+</div>
 
-`SINGLE_USER_MODE` remains in configuration for older installations, but chat availability now follows the Friend/BF model: everyone may chat as a Friend; the owner/pass only changes relationship tone. Administrative commands remain restricted to `OWNER_ID`.
+---
+
+## 🎭 Tiers at a Glance
+
+| Tier | How you get it | What changes |
+| :-- | :-- | :-- |
+| **Friend** | Default for everyone | Standard companion replies |
+| **BF** | You are the configured `OWNER_ID`, **or** you enter the correct `OWNER_CODE` | BF-style companion tone |
+
+> BF access changes **companion tone only**. It does not grant owner-only admin commands or access to another user's private data.
+
+---
+
+## 🔑 Commands
+
+| Command | Effect |
+| :-- | :-- |
+| `/pass <code>` | In a private chat, compares code to `OWNER_CODE`. On success, stores `bf_access=1` only — the code itself is **never saved** to the profile |
+| `/unpass` | Returns a pass holder to Friend mode |
+| `/role` | Shows current chat tier |
+| `/bfusers` | Lists BF-tier profiles — **original owner only** |
+| `/checkin 1-10` | Saves a mood score as a mood category |
+
+---
+
+## ⚙️ Configuration
+
+| Variable | Purpose |
+| :-- | :-- |
+| `OWNER_ID` | Original owner's numeric Telegram user ID. Always receives BF-style replies |
+| `OWNER_CODE` | Shared pass code for BF access — set in the hosting provider's **private** environment settings |
+
+> ⚠️ The sample `.env.example` carries the requested initial value `bubuiloveyou`. **Change it before publishing** the archive to anyone who should not know the pass.
+
+> 🔒 Send `/pass <code>` **only in a private chat** with the bot — **never in a group**.
+
+---
+
+## 🗂️ A Note on `SINGLE_USER_MODE`
+
+`SINGLE_USER_MODE` remains in configuration for older installations, but chat availability now follows the Friend / BF model:
+
+- **Everyone** may chat as a Friend.
+- The owner or a valid pass only **changes relationship tone**.
+- **Administrative commands remain restricted to `OWNER_ID`.**
+
+---
+
+<div align="center">
+<sub>See <code>PRIVACY.md</code> for how <code>OWNER_CODE</code> and <code>bf_access</code> are stored.</sub>
+</div>
