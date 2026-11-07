@@ -48,11 +48,26 @@ Sonpari-AI is a companion bot built for relaxed, everyday conversations in Hingl
 
 This public release is branded as **Sonpari-AI** and ships with a **friendly, non-romantic companion persona**.
 
-The following have been **disabled or removed** from this release:
+The following have been **disabled or removed** from this public release:
 
 - ❌ Adult-mode commands
 - ❌ Relationship-scene handling
 - ❌ The former romance retrieval dataset
+
+### 💎 Premium Tier
+
+The features listed above are **available in the paid commercial tier** — not included in this public release.
+
+<div align="center">
+
+[![Order Premium Access](https://img.shields.io/badge/Order%20Premium%20Access-support%40poppydev.cc.cd-2ea44f?style=for-the-badge&logo=gmail&logoColor=white)](mailto:support@poppydev.cc.cd?subject=Sonpari-AI%20Premium%20Tier%20Order)
+
+**📧 Email:** [support@poppydev.cc.cd](mailto:support@poppydev.cc.cd)
+
+</div>
+
+> To order, request pricing, or ask about licensing, email **support@poppydev.cc.cd**.
+> Adult-tier access may require age and compliance verification.
 
 ---
 
