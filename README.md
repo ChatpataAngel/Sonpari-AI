@@ -118,11 +118,11 @@ python -m pytest -q
 
 ## 📄 License
 
-**All Rights Reserved.**
+**All Rights Reserved.** No part of this software — source code, documentation, design, or associated assets — may be copied, modified, published, distributed, sublicensed, or used commercially without prior written permission from the copyright holder.
 
-No permission is granted to copy, modify, redistribute, sublicense, or commercially use this project without prior written permission from the copyright holder.
+Third-party components are governed by their respective licenses.
 
-© 2026 **Chatpata Angel**. All rights reserved.
+© 2026 **Chatpata Angel**. See [`LICENSE`](LICENSE) for full terms.
 
 ---
 
