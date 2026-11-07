@@ -1,69 +1,165 @@
-# Testing checklist
+<div align="center">
 
-Run `python -m pytest -q` after installing `requirements.txt`.
+# 🧪 Testing Checklist
 
-Important regression cases:
+**How to verify Sonpari-AI before you ship it.**
 
-- `Hello ji` receives a greeting.
-- `kaise ho` receives a wellbeing response.
-- `Kha chodu 🌚` receives playful, non-graphic innuendo rather than a generic fallback.
-- `baby kissi dedo` and `kiss dedo` receive a kiss response.
-- `😂umwaahhh babby` receives an affectionate/laughing response.
-- `kya huaa` receives a coherent clarification.
-- A short answer such as `aap` after an affection prompt is treated as a follow-up.
-- A sentence that saves a memory still receives a conversational response; memory saving must not interrupt normal chat.
-- Unauthorized users are blocked consistently across commands and message handlers in single-user mode.
-- `/forgetall` removes user records only after explicit confirmation.
+</div>
 
-Also manually test Telegram rate limits, quiet hours, scheduler restart behavior and database restore from backup before public deployment.
+---
 
-- Reminder creation validates duration and length; due reminders are retried after send errors.
-- Journal entries are stored locally and deleted by confirmed journal clearing or `/forgetall`.
+## ⚡ Quick Run
 
-## Dialogue regression checks
+```bash
+python -m pip install -r requirements.txt
+python -m pytest -q
+```
 
-The conversation-specific tests include language requests, context repair, greetings, short reactions, laughter, affectionate prompts, flirting, dark humor, and rule-pack validation:
+---
+
+## 🎯 Regression Cases
+
+Every one of these must pass — they're the phrases users actually type.
+
+| Input | Expected behavior |
+| :-- | :-- |
+| `Hello ji` | Greeting response |
+| `kaise ho` | Wellbeing response |
+| `Kha chodu 🌚` | Playful, non-graphic innuendo — not a generic fallback |
+| `baby kissi dedo` / `kiss dedo` | Kiss response |
+| `😂umwaahhh babby` | Affectionate / laughing response |
+| `kya huaa` | Coherent clarification |
+| `aap` after affection prompt | Treated as follow-up |
+| Memory-saving sentence | Still receives conversational reply — saving must not interrupt chat |
+| Unauthorized user (single-user mode) | Blocked consistently across commands and handlers |
+| `/forgetall` | Removes records **only** after explicit confirmation |
+
+---
+
+## 🛠️ Manual Tests Before Public Deployment
+
+- [ ] Telegram rate limits
+- [ ] Quiet hours
+- [ ] Scheduler restart behavior
+- [ ] Database restore from backup
+
+### Additional Checks
+
+- [ ] Reminder creation validates duration and length
+- [ ] Due reminders retry after send errors
+- [ ] Journal entries store locally and are deleted by confirmed journal clearing or `/forgetall`
+
+---
+
+## 💬 Dialogue Regression Suite
 
 ```bash
 python -m pytest -q tests/test_dialogue.py tests/test_dialogue_expanded.py tests/test_language.py
 ```
 
-The full test suite includes SQLite integration and migration tests, so install all dependencies from `requirements.txt` before running `python -m pytest -q`.
+Covers: language requests, context repair, greetings, short reactions, laughter, affectionate prompts, flirting, dark humor, and rule-pack validation.
 
-Run the rule-pack validator to check direct-intent pools, duplicates and YAML loading without any network calls:
+> The **full** suite also includes SQLite integration and migration tests — install all of `requirements.txt` before running `python -m pytest -q`.
+
+### Rule-pack validator (no network)
 
 ```bash
 python scripts/check_dialogue_rules.py
 ```
 
+Checks direct-intent pools, duplicates, and YAML loading.
 
-### Universal translator smoke test (no private text)
+---
 
-In terminal or Telegram, run `/translate status`, then `/translate test`. The test translates the fixed sentence `Hello, how are you?` to Hindi and does not use chat history. To test target-language parsing without network access, use `/translate help` and verify examples such as `/translate Spanish | I love you, baby`, `/translate from Japanese to Hindi | こんにちは`, and `/translate fr | Bonjour`. Unit tests mock both translation providers and verify cache and fallback behavior.
+## 🌐 Universal Translator Smoke Test
 
+> ⚠️ **No private text** — the test uses a fixed sentence.
 
-### Optional Groq fallback tests
+In terminal or Telegram:
 
-The Groq integration tests mock the HTTP endpoint and never require a real API key or send network traffic:
+1. `/translate status`
+2. `/translate test` — translates `Hello, how are you?` to Hindi (no chat history used)
+
+### Target-language parsing (offline)
+
+Use `/translate help`, then verify:
+
+- `/translate Spanish | I love you, baby`
+- `/translate from Japanese to Hindi | こんにちは`
+- `/translate fr | Bonjour`
+
+> Unit tests mock both translation providers and verify cache and fallback behavior.
+
+---
+
+## 🤖 Optional Groq Fallback Tests
+
+Groq tests **mock** the HTTP endpoint — no real API key or network traffic.
 
 ```bash
 python -m pytest -q tests/test_groq_chat.py
 ```
 
-Manual smoke test: configure `GROQ_API_KEY` in `.env` and send a novel everyday message that is not covered by a local rule. Then set `GROQ_ENABLED=false` and confirm local fallback still replies. A live call is optional and subject to the account's model access and rate limits.
+### Manual smoke test
 
+1. Set `GROQ_API_KEY` in `.env`
+2. Send a novel everyday message not covered by local rules
+3. Set `GROQ_ENABLED=false`
+4. Confirm local fallback still replies
 
-## v29 release checklist
+> A live call is optional and subject to account model access and rate limits.
 
-Use `python scripts/release_check.py` before publishing. It runs Python compilation, dialogue-rule validation, romance-bank validation, and the complete pytest suite. It fails the release check if dependencies are missing or any test fails.
+---
 
-Additional checks included by v29:
+## 🚀 v29 Release Checklist
 
-- `tests/test_v29_features.py`: valid/invalid IANA zones, quiet-hour intervals including cross-midnight ranges, deterministic daily challenge selection, streak continuity, SQLite snapshot/restore integrity, invalid backup rejection, and provider-failure alert cooldown behavior.
-- `scripts/backup_db.py backup data/aiko.db --keep 7`: creates and integrity-validates a rotating snapshot.
-- `scripts/backup_db.py validate data/backups/<backup-name>.sqlite3`: validates a snapshot.
-- Stop the bot, then `scripts/backup_db.py restore <backup> data/aiko.db`: validates the source and staged restore, makes a pre-restore copy, and replaces the database atomically.
-- Test `/pass` from a private chat, five incorrect attempts followed by the cooldown, `/revoke`, and verify the pass never grants owner-only commands.
-- Set `/prefs timezone Asia/Kolkata`, `/prefs quiet 23-08`, `/prefs greetings off`, `/prefs memory off`, `/prefs learning off`; inspect `/prefs`, and verify no unwanted proactive greetings/context are generated.
-- Test `/forgetall` in a non-production test account; verify SQLite records and per-user JSON preferences/context are removed.
-- Live Telegram, AI-provider, and host filesystem persistence still require deployment-time smoke tests; local unit tests do not prove network or host availability.
+Run before publishing:
+
+```bash
+python scripts/release_check.py
+```
+
+Runs Python compilation, dialogue-rule validation, romance-bank validation, and the full pytest suite. **Fails** if dependencies are missing or any test fails.
+
+### v29-specific automated checks
+
+`tests/test_v29_features.py` covers:
+
+- Valid / invalid IANA zones
+- Quiet-hour intervals (including cross-midnight)
+- Deterministic daily challenge selection
+- Streak continuity
+- SQLite snapshot / restore integrity
+- Invalid backup rejection
+- Provider-failure alert cooldown
+
+### Backup & restore
+
+```bash
+# Create and validate a rotating snapshot
+scripts/backup_db.py backup data/aiko.db --keep 7
+
+# Validate a snapshot
+scripts/backup_db.py validate data/backups/<backup-name>.sqlite3
+
+# Restore (stop the bot first)
+scripts/backup_db.py restore <backup> data/aiko.db
+```
+
+> Restore validates source and staged restore, makes a pre-restore copy, and replaces the database atomically.
+
+### Manual release walkthrough
+
+- [ ] `/pass` from a private chat — five incorrect attempts, verify cooldown, then `/revoke`
+- [ ] Confirm the pass **never** grants owner-only commands
+- [ ] Set `/prefs timezone Asia/Kolkata`, `/prefs quiet 23-08`, `/prefs greetings off`, `/prefs memory off`, `/prefs learning off`
+- [ ] Inspect `/prefs` — verify no unwanted proactive greetings / context
+- [ ] `/forgetall` in a non-production test account — verify SQLite records **and** per-user JSON preferences / context are removed
+
+> 🚨 **Live Telegram, AI-provider, and host filesystem persistence still require deployment-time smoke tests.** Local unit tests do not prove network or host availability.
+
+---
+
+<div align="center">
+<sub>See <code>ARCHITECTURE.md</code> for the message flow these tests exercise.</sub>
+</div>
