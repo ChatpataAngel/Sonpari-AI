@@ -69,6 +69,7 @@ The features listed above are **available in the paid commercial tier** — not 
 > To order, request pricing, or ask about licensing, email **support@poppydev.cc.cd**.
 > Adult-tier access may require age and compliance verification.
 
+Premium features are licensed, not sold, and remain subject to the LICENSE terms.
 ---
 
 ## 🚀 Quick Start
